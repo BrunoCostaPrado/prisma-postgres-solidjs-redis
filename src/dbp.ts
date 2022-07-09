@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-export async function main() {
+async function main() {
   // const Post = await prisma.user
   //   .create({
   //     data: {
@@ -24,3 +24,5 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+
+export default main;

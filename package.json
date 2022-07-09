@@ -11,7 +11,9 @@
     "db": " prisma migrate dev",
     "dbp": " prisma db pull",
     "studio": " prisma studio",
-    "index": "ts-node src/index.ts"
+    "index": "ts-node src/dbp.ts",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -29,10 +31,19 @@
     "redis": "^4.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.1.39",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/material-ui": "^0.21.12",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "babel-loader": "^8.2.5",
     "cypress": "^10.3.0",
     "jest": "^28.1.2",
     "prisma": "^4.0.0",
