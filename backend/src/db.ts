@@ -1,12 +1,12 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-async function main() {
+async function db() {
   // const Post = await prisma.user
   //   .create({
   //     data: {
-  //       name: "Bruno",
-  //       email: "bruno@buno.com",
+  //       name: "Bruno Costa Prado",
+  //       email: "bruno@costa.com",
   //     },
   //   })
   //   .then(() => {
@@ -17,7 +17,7 @@ async function main() {
   console.log(allUsers);
 }
 
-main()
+db()
   .catch((e) => {
     throw e;
   })
@@ -25,4 +25,4 @@ main()
     await prisma.$disconnect();
   });
 
-export default main;
+export default db;

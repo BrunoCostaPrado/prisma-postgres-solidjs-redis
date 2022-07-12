@@ -6,29 +6,18 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "jest": "jest",
-    "cypress": "cypress open",
-    "db": " prisma migrate dev",
-    "dbp": " prisma db pull",
-    "studio": " prisma studio",
-    "index": "ts-node src/dbp.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@prisma/client": "^4.0.0",
-    "@types/jest": "^28.1.4",
     "@types/node": "^18.0.3",
     "apollo-server": "^3.9.0",
-    "axios": "^0.27.2",
     "formik": "^2.2.9",
     "graphql": "^16.5.0",
-    "prisma-redis-middleware": "^3.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "redis": "^4.2.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
