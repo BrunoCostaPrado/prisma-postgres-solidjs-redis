@@ -16,7 +16,9 @@
     "dbp": " prisma db pull",
     "studio": " prisma studio",
     "d": "ts-node src/db.ts",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate": "graphql-codegen --config codegen.yml",
+    "prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "build": "tsc -p tsconfig.prod.json"
   },
   "dependencies": {
     "@graphql-codegen/core": "^2.6.0",
