@@ -1,11 +1,11 @@
 import { GraphQLObjectType } from "graphql";
-import getAllBooksQuery from "../query/getAllBooksQuery";
+import CreateBookMutation from "./createBookMutation";
 
-const query = new GraphQLObjectType({
-  name: "Query",
+const mutation = new GraphQLObjectType({
+  name: "Mutation",
   fields: {
-    books: getAllBooksQuery,
+    createBook: CreateBookMutation,
   },
 });
 
-export default query;
+export default mutation;
